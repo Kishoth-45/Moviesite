@@ -1,4 +1,4 @@
-<img src="images/marvel.jpg" width="100%" height="350px" alt="">
+<img src="images/marvel.jpg" width="100%" height="400px" alt="">
 
 
 # Moviesite
