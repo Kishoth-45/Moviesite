@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        body {
+            background-color: rgb(12, 1, 22);
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(12, 1, 22);
+            width: 100%;
+            position: sticky;
+            top: 0;
+            height: 50px;
+            z-index: 1;
+        }
+
+        .header .navpay {
+            float: left;
+            height: 2px;
+            margin-top: 14px;
+            margin-left: 10px;
+
+        }
+
+        .header .navpay1 {
+            background-color: rgba(202, 152, 13, 0.411);
+            border-radius: 90px;
+            font-size: 10px;
+            padding: 9px;
+            color: rgb(255, 196, 0);
+        }
+
+        .header li {
+            float: right;
+        }
+
+        .header li a {
+            display: block;
+            color: rgb(252, 241, 242);
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 14px;
+        }
+
+        .float {
+            float: right;
+            padding: 7px;
+        }
+
+        .login {
+            margin-top: 60px;
+            margin-left: 40%;
+            width: 300px;
+            background: transparent;
+            background-color: rgb(12, 1, 22);
+            border: 3px solid #0ef;
+            box-shadow: 0 0 10px #0ef, 0 0 1px #0ef, ;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .login div {
+            padding: 15px
+        }
+
+        .login h2 {
+            font-size: 40px;
+            text-align: center;
+            color: #0ef;
+        }
+
+        .inputbox {
+            text-align: center;
+        }
+
+        .forgot a {
+            color: #0ef;
+            text-decoration: none;
+            margin-left: 10px;
+
+        }
+
+        .forgot a:hover {
+            text-decoration: underline solid 1.3px skyblue;
+        }
+
+        button {
+            position: relative;
+            width: 90%;
+            margin-left: 10px;
+            height: 40px;
+            background-color: aqua;
+            border: 1px solid #0ef;
+            border-radius: 8px;
+            outline: none;
+            color: rgb(24, 1, 1);
+            font-size: 15px;
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: black;
+            box-shadow: 0 0 5px #0ef, 0 0 5px #0ef;
+            text-shadow: 0 0 10px rgb(170, 232, 236), 0 0 10px #0ef;
+        }
+
+        .register {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .register a {
+            color: skyblue;
+            text-decoration: none;
+        }
+
+        .register a:hover {
+            color: rgb(185, 236, 236);
+            text-decoration: underline;
+            text-shadow: 0 0 10px rgb(170, 232, 236), 0 0 10px #0ef;
+        }
+
+        .forgot a:hover {
+            color: rgb(185, 236, 236);
+            text-decoration: underline;
+            text-shadow: 0 0 10px rgb(170, 232, 236), 0 0 10px #0ef;
+        }
+
+ @media screen and (max-width:1000px) {
+    body{
+        margin: 0px;
+        width: 100%;
+    }
+    .header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(11, 1, 20);
+        width: 16%;
+        height: 100% !important;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    .navcontent {
+        margin-left: 16%;
+    }
+
+.header ul li{
+    float: none !important;
+}
+.header li a {
+    display: block;
+    font-size: 6.5px !important;
+    margin-left: 0px;
+    padding: 2px 0px!important;
+    text-align: left !important;
+}
+.header ul img {
+    width: 60px !important;
+    height: 30px !important;
+    padding: 0px 5px !important;
+}
+
+.navpay {
+    font-size: 1px !important;
+    width: 60px;
+    margin: 0px;
+    padding-bottom:20px;
+}
+    .login {
+            margin-top: 100px;
+            margin-left: 23% !important;
+            width: 200px;
+            background: transparent;
+            background-color: rgb(12, 1, 22);
+            border: 3px solid #0ef;
+            box-shadow: 0 0 10px #0ef, 0 0 1px #0ef, ;
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-family: "Poppins", sans-serif;
+    }
+    .navpay {
+        width: 105px;
+        padding-bottom: 20px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li style="float: left;">
+                <img src="images/disnep.jpg" alt="" width="100px" height="50px"></li>
+            <li class="navpay"><a class="navpay1" href="pay.html">SUBSCRIBE <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li class="float"><a href="index.html"><i class="fa-solid fa-phone"></i> </i>CONTACT</a></li>
+            <li class="float"><a href="register.html"><i class="fa-regular fa-address-card"></i> REGISTER</a></li>
+            <li class="float"><a href="login.html"><i class="fa-solid fa-user"></i> LOGIN</a></li>
+            <li class="float"><a href="index.html"><i class="fa-solid fa-camera"></i> MOVIES</a></li>
+            <li class="float"><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+        </ul>
+    </div> <br>
+    <div class="login">
+        <form action="./index.html">
+            <div>
+                <h2>Login</h2>
+            </div>
+
+            <div class="inputbox"> 
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="password">
+            </div>
+            <div class="forgot">
+                <a href="">Forgot password</a>
+            </div>
+            <div class="buttonlog">
+                <button type="submit">Login</button>
+            </div>
+            <div class="register">
+                Don't have an account? <a href="./register.html">Register</a>
+        </form> <br>
+    </div>
+    </center>
+</body>
+ 
+</html>
