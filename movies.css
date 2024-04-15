@@ -267,9 +267,9 @@ body {
 }
 .header li a {
     display: block;
-    font-size: 6.5px !important;
+    font-size: 10px !important;
     margin-left: 0px;
-    padding: 2px 0px!important;
+    padding: 5px 0px!important;
     text-align: left !important;
 }
 .header ul img {
@@ -279,10 +279,7 @@ body {
 }
 
 .navpay {
-    font-size: 1px !important;
-    width: 60px;
-    margin: 0px;
-    padding-bottom:20px;
+   display: none;
 }
     .moviesection div:hover {
         cursor: pointer;
