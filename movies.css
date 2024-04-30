@@ -262,6 +262,10 @@ body {
         margin-left: 16%;
     }
 
+    .header ul i {
+        display: none;
+    }
+
 .header ul li{
     float: none !important;
 }
